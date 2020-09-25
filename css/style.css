@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: grey;
+}
+
+body{
+    max-width: 80%;
+    width: 100vh;
+    margin: auto;
+    padding-top: 1%;
+}
+
+/*  Header  */
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    width: 20%;
+}
+
+/*  Navbar  */
+
+
+nav ul{
+    background-color: #8E1616;
+    padding: 1.5% 0 1.5% 0;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+}
+nav li{
+    color: white;
+    padding: 0 2% 0 2%;
+}
+
+
+/*  Main content    */
+main{
+    height: 800px;
+    background-image: url("../img/traffic-332857_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #CECECE;
+    display:flex;
+    flex-direction: column;
+}
+main div{
+    width: 100%;
+}
+
+#first{
+    color: white;
+    padding: 3vh 0 2vh 5vh;
+    font-weight: normal;
+}
+#second{
+    background-color: rgba(255,255,255, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 5px 3px #888888;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#form {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#result{
+    font-size: xx-large;
+    color: red;
+}
+
+div>h2{
+    padding: 2vh 0 2vh 0;
+}
+
+#btn{
+    padding: 2% 5% 2% 5%;
+    background-color: #339235;
+    border-radius: 10px;
+    color: white;
+}
+
+form div{
+    text-align: left;
+    width: 40%;
+}
+
+#result{
+    padding: 3% 0 3% 0;
+}
+
+#bottom{
+    max-width: 80%;
+    width: 100vh;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom:0;
+    padding: 0 0 2% 0;
+}
+#flexbox{
+    margin-top: 3%;
+    display:flex;
+    justify-content: space-around;
+}
+.square{
+    padding: 3%;
+    border: solid 0.5px grey;
+    text-align: center;
+    border-top: 2px solid black;
+    width: 30%;
+}
+.square h5{
+    font-size: medium;
+    text-align: center;
+}
+.square h4{
+    color: #5B86A7;
+}
+
+/* Footer */
+
+
+footer{
+    margin-top: 3%;
+    background-color: black;
+    text-align: right;
+}
+
+#navFooter ul{
+    padding: 1.5% 0 1.5% 0;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+}
+nav li{
+    color: white;
+    padding: 0 2% 0 2%;
+}
+footer img{
+    padding: 1% 2% 1% 0;
+}
+footer h2{
+    color: white;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+
+@media (max-width: 600px) {
+    body{
+        width: 100%;
+        max-width: 100%;
+    }
+    main{
+        height: 600px;
+    }
+    form div{
+        padding-top: 10px;
+        width: 60%;
+    }
+    #bottom{
+        display: none;
+    }
+    #logo{
+        display: none;  
+    }
+  }
